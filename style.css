@@ -1,0 +1,98 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+input {
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container-book {
+    display: flex;
+    flex-direction: column;
+    background-color: aquamarine;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.yesno input {
+    width: auto;
+}
+
+.header {
+    font-size: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    text-shadow: 2px 2px rgb(197, 195, 195);
+    margin-bottom: 2rem;
+}
+.books {
+    display: grid;
+    width: 80%;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    /* grid-template-rows: repeat(auto-fit, minmax(300px, 1fr)); */
+    gap: 2rem;
+    margin-top: 5rem;
+}
+
+.card-book {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background-color: rgb(97, 179, 151);
+    color: white;
+    border-radius: 1rem;
+    position: relative;
+}
+
+.delete {
+    position: absolute;
+    display: block;
+    font-weight: bold;
+    font-size: 0.8rem;
+    padding: 3px 5px;
+    text-align: center;
+    top: 5%;
+    right: 5%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card-book > *:not(:first-child) {
+    margin-top: 8px;
+}
+
+.read-unchecked {
+    border-left: 5px solid rgb(109, 23, 23);
+}
+
+.read-checked {
+    border-left: 5px solid green;
+}

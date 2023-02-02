@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        VIRTUAL LIBRARY
+    </div>
+    <div class="container-book">
+        <div class="info-container">
+            <div class="book"></div>
+            <form id="add-book-form"action="" method="get">
+                <label for="title">Title</label>
+                <input type="text" name="title" id="title">
+                <label for="author">Author</label>
+                <input type="text" name="author" id="author">
+                <label for="pages">Number of pages</label>
+                <input type="number" name="pages" id="pages">
+                <label for="affirmative">Read the book?</label>
+                <div class="yesno">
+                    <input type="radio" name ="myRadioGroup" value="yes" checked>Yes</input>
+                    <input type="radio" name ="myRadioGroup" value="no">No</input>
+                </div>  
+                <button class="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+     <div class="books"></div>
+</body>
+</html>
